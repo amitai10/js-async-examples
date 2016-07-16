@@ -169,7 +169,27 @@ Promise.all([promise1, promise2, promise3] )
 
 ---
 ### Async/Await
-ES7 Async new feature
+- ES7 Async new feature
+- Write asynchronous as synchronous
+```javascript
+async function foo() {
+  let x = await doWork();
+  console.log(x);
+}
+```
+---
+### Async/Await Error Handling
+Just like synchronous code
+```javascript
+async function foo() {
+  try {
+  	let x = await doWork();
+  	console.log(x);
+  } catch (err) {
+  	console.log(err);
+  }
+}
+```
 
 
 ---
@@ -242,3 +262,7 @@ Or from the creator of the worker:
 ```JavaScript
 worker.close();
 ```
+---
+# Thank You
+##### @AmitaiBarnea
+##### https://github.com/amitai10/js-async-examples
